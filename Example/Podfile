@@ -1,0 +1,6 @@
+use_frameworks!
+target 'ZSNumberKeyBoard_Tests' do
+  pod 'ZSNumberKeyBoard', :path => '../'
+  
+  
+end
