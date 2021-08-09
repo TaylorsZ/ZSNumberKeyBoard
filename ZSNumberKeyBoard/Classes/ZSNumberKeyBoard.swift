@@ -1,7 +1,7 @@
 import UIKit
 import ZSExtensionSwift
 
-enum InputType : Int {
+public enum InputType : Int {
     case positive // 正数键盘
     case float
 }
@@ -112,7 +112,8 @@ private var customKeyBoardKey = "UITextField_Extension_type"
 
 extension UITextField {
     
-    var inputType: InputType? {
+    /// 键盘类型
+    public var inputType: InputType? {
         set {
             let boardView = NumberKeyBoard();
             boardView.textInput = self;
