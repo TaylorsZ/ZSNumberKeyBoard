@@ -11,6 +11,8 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 ## Requirements
 
+ iOS 9.0 +
+ 
 ## Installation
 
 ZSNumberKeyBoard is available through [CocoaPods](https://cocoapods.org). To install
@@ -22,7 +24,7 @@ pod 'ZSNumberKeyBoard'
 
 ## Author
 
-zhangs1992@126.com, zhangs1992@126.com
+Taylor
 
 ## License
 

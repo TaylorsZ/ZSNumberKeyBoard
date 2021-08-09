@@ -16,10 +16,10 @@
 		607FACE51AFB9204008FA782 /* ZSNumberKeyBoard_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZSNumberKeyBoard_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		8E43313931BEDF4C9BD14B0E /* ZSNumberKeyBoard.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = ZSNumberKeyBoard.podspec; path = ../ZSNumberKeyBoard.podspec; sourceTree = "<group>"; };
+		8E43313931BEDF4C9BD14B0E /* ZSNumberKeyBoard.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = ZSNumberKeyBoard.podspec; path = ../ZSNumberKeyBoard.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		909BCE2A1CBD07B8959EADA9 /* Pods-ZSNumberKeyBoard_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZSNumberKeyBoard_Tests.release.xcconfig"; path = "Target Support Files/Pods-ZSNumberKeyBoard_Tests/Pods-ZSNumberKeyBoard_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		95A296AE3CC2F146C76051BF /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		98DB2FC908030FA9658EDD93 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		95A296AE3CC2F146C76051BF /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		98DB2FC908030FA9658EDD93 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		A69F06D7240F23C66F622663 /* Pods_ZSNumberKeyBoard_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZSNumberKeyBoard_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -49,7 +49,6 @@
 				59E554290203AE7746621E44 /* Pods-ZSNumberKeyBoard_Tests.debug.xcconfig */,
 				909BCE2A1CBD07B8959EADA9 /* Pods-ZSNumberKeyBoard_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -131,10 +130,6 @@
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = CocoaPods;
 				TargetAttributes = {
-					607FACCF1AFB9204008FA782 = {
-						CreatedOnToolsVersion = 6.3.1;
-						LastSwiftMigration = 0900;
-					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
 						LastSwiftMigration = 0900;
@@ -147,6 +142,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -178,10 +174,12 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-ZSNumberKeyBoard_Tests/Pods-ZSNumberKeyBoard_Tests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/ZSExtensionSwift/ZSExtensionSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/ZSNumberKeyBoard/ZSNumberKeyBoard.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ZSExtensionSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ZSNumberKeyBoard.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -341,7 +339,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZSNumberKeyBoard_Example.app/ZSNumberKeyBoard_Example";
 			};
 			name = Debug;
@@ -359,7 +357,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZSNumberKeyBoard_Example.app/ZSNumberKeyBoard_Example";
 			};
 			name = Release;
